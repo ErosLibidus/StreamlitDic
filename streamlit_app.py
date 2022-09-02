@@ -52,7 +52,7 @@ if choose == "Inicio":
         df = consultas2(text)
         # capbutton = st.button("consultar")
         # if capbutton:
-        st.table(df.head())
+        st.table(df)
 
     except:
         
