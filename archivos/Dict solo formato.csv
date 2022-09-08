@@ -1,0 +1,95 @@
+Entidad;Atributo;Descripción;Obligación /Condición;Tipo de dato;Ejemplo
+HuellaBiocapacidad;Anio;Año del dato;Indexado;BIGINT;2022
+HuellaBiocapacidad;Poblacion;Población a nivel mundial en millones;Indexado;DOUBLE;7,36
+HuellaBiocapacidad;Biocapacidad Percap;Representa la disponibilidad de superficie biológicamente productiva por habitante.  Unidad: gha/persona (1 gha es la capacidad productiva de 1 ha de tierra de producción media mundial);Indexado;DOUBLE;1,52
+HuellaBiocapacidad;Huella Ecologica Percap;Total de superficie ecológicamente productiva para producir los recursos consumidos por un habitante y los residuos que genera.  Unidad hgpc (hectárea global per cápita: la capacidad productiva de 1 ha de tierra de producción media mundial);Indexado;DOUBLE;2,28
+HuellaBiocapacidad;Tierra;Cociente  entre (huella ecologica/biocapacidad) define la cantidad de  planetas Tierra que se necesita para sustentar a la población.;Indexado;DOUBLE;1,8
+HuellaBiocapacidad;Id_Anio;Código obtenido mediante funcion hash aplicada al año de la emisión.;Clave Primaria; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
+HuellaSosteniblePorPais;País;Nombre del País en inglés;Indexado; Texto(TEXT);Afghanistan
+HuellaSosteniblePorPais;Continente;Continente al que pertenece el país.;Indexado; Texto(TEXT);Africa
+HuellaSosteniblePorPais;Indice ODS;Clasifica los países sobre la base de 17 ODS individuales,  indica la posición del país entre los casos peor (0) y mejor (100).;Indexado;DOUBLE;58,3
+HuellaSosteniblePorPais;Expectativa De Vida;Es la media de la cantidad de años que vive una determinada población total en un cierto período.;Indexado;DOUBLE;85
+HuellaSosteniblePorPais;Indice de Desarrollo Humano;El Índice de Desarrollo Humano (IDH) es una medida resumida del logro promedio en dimensiones clave del desarrollo humano: una vida larga y saludable, estar bien informado y tener un nivel de vida decente(entre 0,1 y 1,0).;Indexado;DOUBLE;0,75
+HuellaSosteniblePorPais;PiB Per Capita;Mide la producción económica de una nación por persona determinando su prosperidad.;Indexado;DOUBLE;91608,03
+HuellaSosteniblePorPais;Ingresos;El Banco Mundial asigna las economías del mundo a cuatro grupos de ingresos: países de ingresos bajos, medios-bajos, medianos-altos y de ingresos altos.;Indexado;Texto(TEXT);Ingresos Altos
+HuellaSosteniblePorPais;Población;Cantidad de habitantes de un territorio, en millones.;Indexado;DOUBLE ;4,29
+HuellaSosteniblePorPais;Huella Carbono;La huella de carbono representa el volumen total de gases de efecto invernadero (GEI) que producen las actividades económicas y cotidianas del ser humano pasada por equivalencia a hg (hectárea global);Indexado;DOUBLE ;2,7
+HuellaSosteniblePorPais;Huella Ecológica;"Total de superficie ecológicamente productiva para producir los recursos consumidos por un pais y los residuos que genera.  Unidad hg (hectárea global)
+";Indexado;DOUBLE ;2,7
+HuellaSosteniblePorPais;Biocapacidad ;Representa la disponibilidad de superficie biológicamente productiva del país.;Indexado;DOUBLE;2,8
+HuellaSosteniblePorPais;Tierra;Cociente  entre (huella ecologica/biocapacidad) define la cantidad de  planetas Tierra que se necesita para sustentar a la población.;Indexado;DOUBLE;1,8
+HuellaSosteniblePorPais;Codigo;Códigos de país de tres letras (Norma ISO 3166-1 alfa-3);Indexado; Texto(TEXT);ARG
+HuellaSosteniblePorPais;Id_Pais;Código obtenido mediante funcion hash aplicada al país de la emisión.;Clave Primaria; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
+ConsumoTipoEnergiaPais;País;Nombre del País en inglés;Indexado; Texto(TEXT);Afghanistan
+ConsumoTipoEnergiaPais;Continente;Continente al que pertenece el país.;Indexado; Texto(TEXT);Africa
+ConsumoTipoEnergiaPais;Codigo;Códigos de país de tres letras (Norma ISO 3166-1 alfa-3);Indexado; Texto(TEXT);ARG
+ConsumoTipoEnergiaPais;Anio;Año del dato;Indexado;BIGINT;2022
+ConsumoTipoEnergiaPais;Eolico;Consumo proveniente de fuentes de energía eólica en TWh (Teravatio/hora);Indexado;DOUBLE ;323,496124
+ConsumoTipoEnergiaPais;Hidroelectrico;Consumo proveniente de fuentes de energía hidroeléctrica en TWh (Teravatio/hora);Indexado;DOUBLE ;145,496124
+ConsumoTipoEnergiaPais;Solar;Consumo proveniente de fuentes de energía solar en TWh (Teravatio/hora);Indexado;DOUBLE ;223,496124
+ConsumoTipoEnergiaPais;Nuclear;Consumo proveniente de fuentes de energía nuclear en TWh (Teravatio/hora);Indexado;DOUBLE ;65,496124
+ConsumoTipoEnergiaPais;Biocombustibles;Consumo proveniente de fuentes de biocombustibles en TWh (Teravatio/hora);Indexado;DOUBLE ;53,496124
+ConsumoTipoEnergiaPais;Biomasa;Consumo proveniente proveniente de biomasa en TWh (Teravatio/hora);Indexado;DOUBLE ;93,496124
+ConsumoTipoEnergiaPais;Carbon;Consumo proveniente de fuentes de carbón en TWh (Teravatio/hora);Indexado;DOUBLE ;323,496124
+ConsumoTipoEnergiaPais;Petroleo;Consumo proveniente de fuentes de biocombustibles en TWh (Teravatio/hora);Indexado;DOUBLE ;83,496124
+ConsumoTipoEnergiaPais;Gas;Consumo proveniente de fuentes de biocombustibles en TWh (Teravatio/hora);Indexado;DOUBLE ;113,496124
+ConsumoTipoEnergiaPais;Id_Pais;Código obtenido mediante funcion hash aplicada al país de la emisión.;Clave Primaria; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
+PorcentajeConsumoTipoEnergíaPais;País;Nombre del País en inglés;Indexado; Texto(TEXT);Afghanistan
+PorcentajeConsumoTipoEnergíaPais;Continente;Continente al que pertenece el país.;Indexado; Texto(TEXT);Africa
+PorcentajeConsumoTipoEnergíaPais;Codigo;Códigos de país de tres letras (Norma ISO 3166-1 alfa-3);Indexado; Texto(TEXT);ARG
+PorcentajeConsumoTipoEnergíaPais;Anio;Año del dato;Indexado;BIGINT;2022
+PorcentajeConsumoTipoEnergíaPais;Combustibles Fosiles;Porcentaje que representan los  combustibles fósiles en la demanda de energía primaria.;Indexado;DOUBLE ;93,87793
+PorcentajeConsumoTipoEnergíaPais;Renovables;Porcentaje que representan los  combustibles de fuente renovable en la demanda de energía primaria.;Indexado;DOUBLE ;6,122062
+PorcentajeConsumoTipoEnergíaPais;Nuclear;Porcentaje que representan los  combustibles de fuente nuclear en la demanda de energía primaria.;Indexado;DOUBLE ;12,36
+PorcentajeConsumoTipoEnergíaPais;Id_Pais;Código obtenido mediante funcion hash aplicada al país de la emisión.;Clave Primaria; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
+AnomaliaDeTemperatura;Anio;Año del dato;Indexado;BIGINT;2022
+AnomaliaDeTemperatura;Anomalia  Media; Las anomalías están referidas al promedio global del período 1961/1990, que según indican fue más cálido que los anteriores en la mayor parte del globo,;Indexado;DOUBLE ;0.763
+AnomaliaDeTemperatura;Limite Superior;Límite superior del intervalo de confianza (IC) del 95%.;Indexado;DOUBLE ;0.802
+AnomaliaDeTemperatura;Limite Inferior;Límite inferior del intervalo de confianza (IC) del 95%.;Indexado;DOUBLE ;0.730
+AnomaliaDeTemperatura;Id_Anio;Código obtenido mediante funcion hash aplicada al año de la emisión.;Clave Primaria; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
+ProduccionEnergiaTipoPaisAnio;País;Nombre del País en inglés;Indexado; Texto(TEXT);Afghanistan
+ProduccionEnergiaTipoPaisAnio;Codigo;Códigos de país de tres letras (Norma ISO 3166-1 alfa-3);Indexado; Texto(TEXT);ARG
+ProduccionEnergiaTipoPaisAnio;Anio;Año del dato;Indexado;BIGINT;2022
+ProduccionEnergiaTipoPaisAnio;Carbon;Producción de energía eléctrica proveniente de fuentes de carbón en TWh (Teravatio/hora);Indexado;DOUBLE ;323,496124
+ProduccionEnergiaTipoPaisAnio;Gas;Producción de energía eléctrica proveniente de fuentes de biocombustibles en TWh (Teravatio/hora);Indexado;DOUBLE ;113,496124
+ProduccionEnergiaTipoPaisAnio;Hidroelectrica;Producción de energía eléctrica proveniente de fuentes de energía hidroeléctrica en TWh (Teravatio/hora);Indexado;DOUBLE ;145,496124
+ProduccionEnergiaTipoPaisAnio;Biocombustibles;Producción de energía eléctrica proveniente de fuentes de biocombustibles en TWh (Teravatio/hora);Indexado;DOUBLE ;53,496124
+ProduccionEnergiaTipoPaisAnio;Solar;Producción de energía eléctrica proveniente de fuentes de energía solar en TWh (Teravatio/hora);Indexado;DOUBLE ;223,496124
+ProduccionEnergiaTipoPaisAnio;Petroleo;Producción de energía eléctrica proveniente de fuentes de biocombustibles en TWh (Teravatio/hora);Indexado;DOUBLE ;83,496124
+ProduccionEnergiaTipoPaisAnio;Eolica;Producción de energía eléctrica proveniente de fuentes de energía eólica en TWh (Teravatio/hora);Indexado;DOUBLE ;323,496124
+ProduccionEnergiaTipoPaisAnio;Nuclear;Producción de energía eléctrica que representan los  combustibles de fuente nuclear en la demanda de energía primaria.;Indexado;DOUBLE ;12,36
+ProduccionEnergiaTipoPaisAnio;Continente;Continente al que pertenece el país.;Indexado; Texto(TEXT);Africa
+ProduccionEnergiaTipoPaisAnio;Id_Pais;Código obtenido mediante funcion hash aplicada al país de la emisión.;Clave Primaria; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
+ProduccionEnergiaTipoPaisAnio;Id_Anio;Código obtenido mediante funcion hash aplicada al año de la emisión.;Clave Primaria; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
+EnergíaCO2CompletaPaisAnio;País;Nombre del País en inglés;Indexado; Texto(TEXT);Afghanistan
+EnergíaCO2CompletaPaisAnio;Combustible;Tipo de combustible.;Indexado; Texto(TEXT);Petroleo
+EnergíaCO2CompletaPaisAnio;Anio;Año del dato;Indexado;BIGINT;2022
+EnergíaCO2CompletaPaisAnio;Consumo De Energía;Consumo de energía en el país por tipo de fuente en BTU.;Indexado;DOUBLE ;292,8769
+EnergíaCO2CompletaPaisAnio;Produción De Energía ;Producción de energía por tipo de fuente  del país en BTU.;Indexado;DOUBLE ;323,496124
+EnergíaCO2CompletaPaisAnio;PiB ;Mide la producción económica de una nación determinando su prosperidad.;Indexado;DOUBLE;91608,03
+EnergíaCO2CompletaPaisAnio;Poblacion;Población a nivel mundial en millones;Indexado;DOUBLE;7,36
+EnergíaCO2CompletaPaisAnio;Intensidad Energetica Per Capita;Es el cociente entre el consumo energético y los habitantes, medido en BTU.;Indexado;DOUBLE ;11,59
+EnergíaCO2CompletaPaisAnio;Intensidad Energetica Por Pib;Es el cociente entre el consumo energético y el PiB, medido en BTU.;Indexado;DOUBLE ;11,59
+EnergíaCO2CompletaPaisAnio;Emision De Co2;Emision de CO2 por país;Indexado;DOUBLE ;192.83
+EnergíaCO2CompletaPaisAnio;Consumo De Energia TWh;Consumo de energía en el país por tipo de fuente en Teravatio/hora.;Indexado;DOUBLE ;1,87433E-08
+EnergíaCO2CompletaPaisAnio;Produccion De Energia TWh;Producción de energía por tipo de fuente  del país en Teravatio/hora.;Indexado;DOUBLE ;26
+EnergíaCO2CompletaPaisAnio;Intensidad Energetica Per Capita TWh;Es el cociente entre el consumo energético y los habitantes, medido en Teravatio/hora.;Indexado;DOUBLE ;1.97
+EnergíaCO2CompletaPaisAnio;Intensidad Energetica Por Pib TWh;Es el cociente entre el consumo energético y el PiB, medido en Teravatio/hora.;Indexado;DOUBLE ;1.31
+EnergíaCO2CompletaPaisAnio;Continente;Continente al que pertenece el país.;Indexado; Texto(TEXT);Europa
+EnergíaCO2CompletaPaisAnio;Id_País;Código obtenido mediante funcion hash aplicada al país de la emisión.;Clave Primaria; Texto(TEXT);f5a7924e621e84c9280a9a27e1bcb7f6
+EnergíaCO2CompletaPaisAnio;Id_Año;Código obtenido mediante funcion hash aplicada al año de la emisión.;Indexado; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
+GasesEfectoInvernadero;Anio;Año del dato;Indexado;BIGINT;2022
+GasesEfectoInvernadero;N2O Oxido Nitroso;Producción media anual de  óxido nitroso por pais en ppb (partes por billón).;Indexado;DOUBLE;293,56
+GasesEfectoInvernadero;SF6 Hexafluoruro de Azufre;Producción media anual de  Hexafluoruro de azufre por año en ppb (partes por billón).;Indexado;DOUBLE;9,64
+GasesEfectoInvernadero;CO2 Dioxido de Carbono;Producción media anual de  dióxido de carbono por año en ppm (partes por millón).;Indexado;DOUBLE;334,31
+GasesEfectoInvernadero;CH4 Metano;Producción media anual de  Metadno por año en ppb (partes por billón).;Indexado;DOUBLE;2,69
+GasesEfectoInvernadero;Id_Anio;Código obtenido mediante funcion hash aplicada al año de la emisión.;Clave Primaria; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
+PlantasGeneradorasEnergiaPais;Codigo;Códigos de país de tres letras (Norma ISO 3166-1 alfa-3);Indexado; Texto(TEXT);ARG
+PlantasGeneradorasEnergiaPais;País;Nombre del País en inglés;Indexado; Texto(TEXT);Afghanistan
+PlantasGeneradorasEnergiaPais;Anio;Año del dato;Indexado;BIGINT;2022
+PlantasGeneradorasEnergiaPais;Combustible Primario;;;;
+PlantasGeneradorasEnergiaPais;Generacion Gwh 2013 a Generacion Gwh 2019;;;;
+PlantasGeneradorasEnergiaPais;Id_Pais;Código obtenido mediante funcion hash aplicada al país de la emisión.;Clave Primaria; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
+PlantasGeneradorasEnergiaPais;Continente;Continente al que pertenece el país.;Indexado; Texto(TEXT);Africa
+PlantasGeneradorasEnergiaPais;;;;;
+PlantasGeneradorasEnergiaPais;Id_Anio;Código obtenido mediante funcion hash aplicada al año de la emisión.;Clave Primaria; Texto(TEXT);e4dd5528f7596dcdf871aa55cfccc53c
