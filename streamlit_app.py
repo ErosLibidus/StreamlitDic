@@ -30,12 +30,14 @@ def consultas2(consulta):
         if connetion is not None:
             connetion.close()
         #return df  
-
+def convert_df(df):
+    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    return df.to_csv().encode('utf-8')
 with st.sidebar:
     choose = option_menu("Galeria", ["Inicio", "Diccionarios"],
-                         icons=['house', "house"],
-                         menu_icon="app-indicator", default_index=0,
-                         styles={
+                        icons=['house', "house"],
+                        menu_icon="app-indicator", default_index=0,
+                        styles={
         "container": {"padding": "8!important", "background-color": "#202022"},
         "icon": {"color": "#00747C", "font-size": "15px"}, 
         "nav-link": {"font-size": "18px", "text-align": "down", "margin":"0px", "--hover-color": "#363333"},
@@ -47,12 +49,21 @@ with st.sidebar:
 if choose == "Inicio":
     try:
         text = st.text_area('Consulta SQL')
-        #consultas("Select * from public.energyco2")
-        # st.table(consultas("Select * from public.energyco2"))
+        #consultas2(text)
         df = consultas2(text)
-        # capbutton = st.button("consultar")
-        # if capbutton:
-        st.table(df)
+        capbutton = st.button("consultar")
+        if capbutton:
+            st.table(df.head(10))
+            df.to_csv(index=False).encode("utf-8")
+            csv = convert_df(df)
+        text2 = st.text_input("Nombre de archivo")
+        csv=df.to_csv()
+        st.download_button(
+        label="Download data as CSV",
+        data=csv,
+        file_name=text2 + ".csv",
+        mime='text/csv',
+    )
 
     except:
         
@@ -74,6 +85,7 @@ if choose == "Diccionarios":
             st.write(tabla[tabla["Entidad"] == i])
             #break
             #st.write(f.read())
+
 
     #st.table(tabla[tabla["Entidad"] == "tabla_hecho"])
     #st.write(f.read())
